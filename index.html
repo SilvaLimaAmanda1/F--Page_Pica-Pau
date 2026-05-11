@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Fan page Pica-Pau">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/Isotipo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="assets/FavIcon.png">
+    <title>Pica-Pau & Cia | Portal Nostalgia</title>
+</head>
+<body>
+    <header>
+        <div class="header-top container">
+            <div class="logo">PICA-PAU <span>& CIA.</span></div>
+            <p class="slogan">A SUA FAN PAGE DO PICA-PAU!</p>
+        </div>
+        <nav class="container">
+            <div class="menu-toggle" id="menu-toggle">
+            	<i class="ri-menu-line"></i>
+            </div>
+            <ul class="menu">
+                <li><a href="#inicio" class="active">INÍCIO</a></li>
+				<li><a href="#personagens">PERSONAGENS</a></li>
+				<li><a href="#noticias">NOTÍCIAS</a></li>
+				<li><a href="#episodios">EPISÓDIOS</a></li>
+				<li><a href="#fanartes">FÃ-ARTES</a></li>
+				<li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="container main-layout">
+    <section class="inicio" id="inicio">
+
+    <div class="welcome-box">
+        <div class="welcome-text">
+            <h1>Bem-vindo ao Portal do<br><span>Pica-Pau!</span></h1>
+            <p>Reviva os episódios clássicos, conheça os personagens mais malucos e acompanhe curiosidades do desenho mais 
+            bagunceiro da televisão!</p>
+            <div class="portal-stats">
+                <span>+120 episódios</span>
+                <span>10 personagens clássicos</span>
+                <span>Portal nostálgico</span>
+            </div>
+            <a href="#episodios" class="btn-cartoon">
+                VER EPISÓDIOS
+            </a>
+        </div>
+
+        <div class="welcome-character">
+            <img src="assets/Pica-Pau.png" alt="Pica-Pau">
+        </div>
+    </div>
+
+</section>
+	<div class="top-section">
+			<!-- SLIDER -->
+			<section class="slider-container">
+			    <div class="slider-wrapper">
+			        <div class="slide active">
+			            <img src="assets/Banner-1.png" alt="Banner 1">
+			        </div>
+			        <div class="slide">
+			            <img src="assets/Banner-2.png" alt="Banner 2">
+			        </div>
+			        <div class="slide">
+			            <img src="assets/Banner-3.png" alt="Banner 3">
+			        </div>
+			        <div class="slide">
+			            <img src="assets/Banner-4.png" alt="Banner 4">
+			        </div>
+			        <div class="slide">
+			            <img src="assets/Banner-5.png" alt="Banner 5">
+			        </div>
+			    </div>
+
+			    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+			    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+			    <div class="dots-container">
+			        <span class="dot active" onclick="currentSlide(0)"></span>
+			        <span class="dot" onclick="currentSlide(1)"></span>
+			        <span class="dot" onclick="currentSlide(2)"></span>
+			        <span class="dot" onclick="currentSlide(3)"></span>
+			        <span class="dot" onclick="currentSlide(4)"></span>
+			    </div>
+			</section>
+
+			<!-- SIDEBAR -->
+			<aside class="sidebar">
+				<!-- Busca -->
+				<div class="search-box">
+					<input type="text" placeholder="Buscanha...">
+					<button><i class="ri-search-line"></i></button>
+				</div>
+				<!-- Redes sociais -->
+				<div class="social-box">
+					<p>SIGA-NOS!</p>
+					<div class="icons">
+						<i class="ri-facebook-fill"></i>
+	                	<i class="ri-instagram-fill"></i>
+	                	<i class="ri-youtube-fill"></i>
+	                	<i class="ri-twitter-x-fill"></i>
+					</div>
+				</div>
+				<!-- Episódio em destaque -->
+				<div class="highlight-box" id="episodios">
+	    			<h3>Episódio em Destaque</h3>
+
+	    			<div class="video-thumb" onclick="openVideo()">
+	        			<img src="assets/capa.jpg" alt="episódio destaque">
+	        
+	        			<div class="play-overlay">▶</div>
+	    			</div>
+
+	    			<p class="video-title">O cachorro quente perfeito</p>
+				</div>
+
+				<!-- MODAL com o video escondido -->
+				<div class="video-modal" id="videoModal">
+				    <div class="modal-content">
+				        <span class="close" onclick="closeVideo()">✖</span>
+
+				        <video id="player" controls>
+				            <source src="assets/O-cachorro-quente.mp4" type="video/mp4">
+				        </video>
+				    </div>
+				</div>
+			</aside>
+	</div>
+        <section class="portal-grid" id="personagens">
+            <div class="portal-box blue">
+                <h2 class="box-title">Ficha dos Personagens</h2>
+                <div class="character-mini-grid">
+                    <div class="mini-card"><img src="assets/Zeca_Urubu.png" alt="Personagem Zeca Urubu"><p>Zeca Urubu</p></div>
+                    <div class="mini-card"><img src="assets/winnie.png" alt="Personagem Winnie"><p>Winnie</p></div>
+                    <div class="mini-card"><img src="assets/leoncio.png" alt="Personagem Leôncio"><p>Leôncio</p></div>
+                    <div class="mini-card"><img src="assets/Chilly_Willy.png" alt="Personagem Picolino"><p>Picolino</p></div>
+                </div>
+            </div>
+
+		<div class="portal-box red">
+		   	<h2 class="box-title">Votação da Semana</h2>
+
+		    <div class="box-content">
+		        <p>Qual seu episódio favorito?</p>
+
+		        <label><input type="radio" name="voto" value="pizza"> O Rei da Pizza</label>
+		        <label><input type="radio" name="voto" value="tapeado"> Fui Tapeado!</label>
+		        <label class="opcao destaque"><input type="radio" name="voto" value="cachorro"> ⭐ O cachorro quente perfeito</label>
+
+		        <button class="btn-votar" onclick="votar()">VOTAR</button>
+
+		        <!-- RESULTADO -->
+		        <div class="resultado" id="resultado" style="display:none;">
+		            <p><strong>Resultado:</strong></p>
+
+		            <div class="barra">
+		                <span>O Rei da Pizza</span>
+		                <div class="progresso" id="pizza-bar"></div>
+		            </div>
+
+		            <div class="barra">
+		                <span>Fui Tapeado!</span>
+		                <div class="progresso" id="tapeado-bar"></div>
+		            </div>
+		            <div class="barra">
+					    <span>O Cachorro Quente Perfeito</span>
+					    <div class="progresso" id="cachorro-bar"></div>
+					</div>
+		        </div>
+		    </div>
+		</div>
+        </section>
+		<section class="noticias" id="noticias">
+
+		    <h2 class="section-title">Últimas Notícias</h2>
+
+		    <div class="news-grid">
+
+		        <!-- CARD -->
+		        <article class="news-card">
+		            <div class="news-thumb">
+		                <img src="assets/1.png" alt="Notícia">
+		                <span class="news-tag">NOVO</span>
+		            </div>
+
+		            <div class="news-content">
+		                <h3>Pica-Pau ganhará remasterização em 4K</h3>
+
+		                <p>
+		                    Episódios clássicos poderão receber nova versão
+		                    restaurada para streaming.
+		                </p>
+
+		                <a href="#">LER MAIS</a>
+		            </div>
+		        </article>
+
+		        <!-- CARD -->
+		        <article class="news-card">
+		            <div class="news-thumb">
+		                <img src="assets/2.png" alt="Notícia">
+		                <span class="news-tag red">CURIOSIDADE</span>
+		            </div>
+
+		            <div class="news-content">
+		                <h3>A origem da risada do Pica-Pau</h3>
+
+		                <p>
+		                    Descubra como nasceu uma das risadas mais famosas
+		                    dos desenhos animados.
+		                </p>
+
+		                <a href="#">LER MAIS</a>
+		            </div>
+		        </article>
+
+		        <!-- CARD -->
+		        <article class="news-card">
+		            <div class="news-thumb">
+		                <img src="assets/3.png" alt="Notícia">
+		                <span class="news-tag blue">CLÁSSICO</span>
+		            </div>
+
+		            <div class="news-content">
+		                <h3>Os episódios mais lembrados pelos fãs</h3>
+
+		                <p>
+		                    Uma seleção nostálgica dos episódios mais amados
+		                    da série clássica.
+		                </p>
+
+		                <a href="#">LER MAIS</a>
+		            </div>
+		        </article>
+
+		    </div>
+		</section>
+        <section class="episodios" id="episodios">
+        	<h2 class="section-title">Episódios Clássicos</h2>
+        	<div class="episodes-grid">
+        		<!--card-->
+        		<div class="episode-card">
+        			<div class="episode-thumb">
+        				<img src="assets/capa.jpg" alt="Episódio">
+        				<div class="episode-overlay">
+        					<span>▶ assitir</span>
+        				</div><!--episode-overlay-->
+        			</div><!--episode-thumb-->
+        			<div class="episode-info">
+        				<h3>O Cachorro Quente Perfeito</h3>
+        				<p>1954 • Clássico</p>
+        			</div>
+        		</div>
+        		<!--card-->
+        		<div class="episode-card">
+        			<div class="episode-thumb">
+        				<img src="assets/ep-2.jpg" alt="Episódio">
+        				<div class="episode-overlay">
+        					<span>▶ assitir</span>
+        				</div><!--episode-overlay-->
+        			</div><!--episode-thumb-->
+        			<div class="episode-info">
+        				<h3>Fui Tapeado!</h3>
+        				<p>1952 • Humor</p>
+        			</div>
+        		</div>
+        		<!--card-->
+        		<div class="episode-card">
+        			<div class="episode-thumb">
+        				<img src="assets/ep-3.jpg" alt="Episódio">
+        				<div class="episode-overlay">
+        					<span>▶ assitir</span>
+        				</div><!--episode-overlay-->
+        			</div><!--episode-thumb-->
+        			<div class="episode-info">
+        				<h3>Hora da Pizza</h3>
+        				<p>1972 • Humor traquinagem</p>
+        			</div>
+        		</div>
+        		<!--card-->
+        		<div class="episode-card">
+        			<div class="episode-thumb">
+        				<img src="assets/ep-4.jpg" alt="Episódio">
+        				<div class="episode-overlay">
+        					<span>▶ assitir</span>
+        				</div><!--episode-overlay-->
+        			</div><!--episode-thumb-->
+        			<div class="episode-info">
+        				<h3>Barbeiro Trapaceiro</h3>
+        				<p>1949 • caos Total</p>
+        			</div>
+        		</div>
+
+
+        	</div>		
+        </section>
+        <section class="fanartes" id="fanartes">
+        	<h2 class="section-title">Galeria de Fã-Artes</h2>
+        	<div class="fanarts-grid">
+        		<!-- CARD -->
+        		<div class="fanart-card">
+        			<img src="assets/fan-1.png" alt="Fanartes Pica-Pau e Zé Jacaré">
+
+        			<div class="fanart-info">
+        				<h3>Pica-Pau e Zé Jacaré</h3>
+        				<p>Por Denis</p>
+        			</div>
+        		</div>
+        		<!-- CARD -->
+        		<div class="fanart-card">
+        			<img src="assets/fan-2.png" alt="Fanartes Leoncio e Pica-Pau">
+
+        			<div class="fanart-info">
+        				<h3>Leoncio e Pica-Pau</h3>
+        				<p>Por Isadora </p>
+        			</div>
+        		</div>
+        		<!-- CARD -->
+        		<div class="fanart-card">
+        			<img src="assets/fan-3.png" alt="Fanartes Chilly Willy">
+
+        			<div class="fanart-info">
+        				<h3>Chilly Willy</h3>
+        				<p>Por Gabriel</p>
+        			</div>
+        		</div>
+        		<!-- CARD -->
+        		<div class="fanart-card">
+        			<img src="assets/fan-4.png" alt="Fanartes Zeca Urubu e Nanico">
+
+        			<div class="fanart-info">
+        				<h3>Zeca Urubu e Nanico</h3>
+        				<p>Por Rebeca</p>
+        			</div>
+        		</div>
+        		<!-- CARD -->
+        		<div class="fanart-card">
+        			<img src="assets/fan-5.png" alt="Fanartes Winnie e Knothead-Splinter">
+
+        			<div class="fanart-info">
+        				<h3>Winnie e Knothead-Splinter</h3>
+        				<p>Por Rebeca</p>
+        			</div>
+        		</div>
+
+        	</div>
+        </section>
+        <section class="contato" id="contato">
+        	<h2 class="section-title">Entre em Contato</h2>
+        	<div class="contact-box">
+        		<!--TEXTO-->
+        		<div class="contact-info">
+        			<h3>Fale com o Portal!</h3>
+        			<p>Tem sugestões, fan-arts ou episódios favoritos? 
+        			Envie sua mensagem para o nosso portal nostálgico!</p>
+        			<div class="contact-icons">
+        				<div class="contact-item">
+        					<i class="ri-mail-fill"></i>
+        					<span>contato@picapaucia.com</span>
+        				</div>
+        				<div class="contact-item">
+        					<i class="ri-instagram-fill"></i>
+        					<span>@picapaucia.com</span>
+        				</div>
+        				<div class="contact-item">
+        					<i class="ri-youtube-fill"></i>
+        					<span>Pica-Pau & Cia</span>
+        				</div>
+        			</div>
+        		</div><!--contact-info-->
+
+        		<!--FORM-->
+        		<form class="contact-form">
+        			<input type="text" placeholder="Seu Nome">
+        			<input type="text" placeholder="Seu E-mail">
+        			<textarea placeholder="Sua Mensagem"></textarea>
+        			<button type="submit">enviar mensagem</button>
+        			<div class="upload-box">
+        				<label for="fanarte-upload">
+        					<i class="ri-image-fill"></i>
+        					Envie sua Fã-arte
+        					<img id="preview-fanart" src="" alt="">
+        				</label>
+        				<input type="file" id="fanart-upload" accept="image/*">
+        				<p>PNG, JPG ou WEBP</p>
+        			</div>
+        		</form>
+        	</div><!--contact-box-->
+        </section>
+</main>
+
+    <footer>
+    	<div>
+    		<ul class="footer-nav">
+    			<li><a href="#">sobre nós</a></li>
+    			<li><a href="#">termos de uso</a></li>
+    			<li><a href="#">política de privacidade</a></li>
+    		</ul>
+    		<p>&copy; 2026 Pica-Pau&Cia. -Uma fã page para fãs. Woody Woodpecker é propriedade da Universal/Walter Lantz Productions</p>
+    	</div>
+    </footer>
+   <script src="script.js"></script> 
+</body>
+</html>
